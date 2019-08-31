@@ -1,6 +1,6 @@
 # Sistema-blog
 Sistema de blog personal en la cual puedes crear nuevas entradas, etiquetas y publicaciones nuevas. <br>
-Se adjunta base de datos <a href="https://github.com/joseguamanp/Sistema-blog/">Descargar </a> <br>
+Se adjunta base de datos <a href="https://github.com/joseguamanp/Sistema-blog/blob/master/blog.sql">Descargar </a> <br>
 Descargarla y crear una base de datos con el mismo nombre. una vez creada solo ejecute el query.
 <h1>Panel administrador</h1>
 <p align="center"> <img src="https://github.com/joseguamanp/Sistema-blog/blob/master/public/imagen/capturas/principal.PNG"/> 
