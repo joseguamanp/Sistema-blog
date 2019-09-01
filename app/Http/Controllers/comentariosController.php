@@ -48,7 +48,7 @@ class comentariosController extends Controller
                 'nombre'=>$request->input('nombre'),
                 'web'=>$request->input('web')
             ]);
-        return redirect('blog/'.$request->input('id_entradas'));
+        return redirect('blog');
     }
 
     /**

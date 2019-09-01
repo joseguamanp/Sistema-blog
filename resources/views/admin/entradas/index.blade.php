@@ -17,7 +17,10 @@
           <div class="col-md-4">
           <ul class="nav nav-pills nav-stacked">
             <li class="active"><a href="#">Categorias</a></li>
-            <li><a href="#">Mis cuentos <b>(15)</b></a></li>
+            @foreach($categoria as $ca)
+                <li><input type="checkbox" name="" value="{{$ca->id}}">{{$ca->nombre}}</li>
+            @endforeach
+            
           </ul>
           </div>	
         </div>

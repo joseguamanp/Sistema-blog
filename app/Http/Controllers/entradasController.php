@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\EntradasModel;
+use App\CategoriasModel;
 use Illuminate\Support\Facades\Auth;
 
 class entradasController extends Controller
@@ -15,7 +16,8 @@ class entradasController extends Controller
      */
     public function index()
     {
-        return view("admin.entradas.index");
+        $categoria=CategoriasModel::all();
+        return view("admin.entradas.index",["categoria"=>$categoria]);
     }
 
     /**
@@ -26,6 +28,7 @@ class entradasController extends Controller
     public function create()
     {
         $data=EntradasModel::all();
+        
         return view("admin.entradas.mostrar",["rol"=>$data]);
     }
 
